@@ -3,6 +3,10 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class WeekOneExercisesPartOne {
+    // ** EXERCISE INSTRUCTIONS **
+    // Make the smallest change(s) possible to get each test to pass in sequence.
+    // Commit to git after each test passes with a message describing what you did.
+
     final double ROUND_TO_NEAREST_PENNY = .001;
 
     @Test
@@ -45,9 +49,6 @@ public class WeekOneExercisesPartOne {
         assertEquals(1, actualLeftoverSlices);
     }
 
-    // make the smallest change(s) possible to get each test to pass in seqence
-    // commit after each test passes
-
     private int divideUpEightSlicePizzasEvenly(int numberOfPizzas, int numberOfPeople) {
         return 0;
     }
@@ -62,15 +63,21 @@ public class WeekOneExercisesPartOne {
         float interestRateAsAPercent = 4.3f;
         float termOfInvestmentInYears = 4;
 
-        //  The formula for simple interest is A = P(1 + rt), where P is the principal amount, r is the annual
-        //  rate of interest, t is the number of years the amount is invested, and A is the amount at the end of
-        //  the investment.
-
         float actualInvestmentValue = calcSimpleInterest(principalAmount, interestRateAsAPercent, termOfInvestmentInYears);
 
         assertEquals(1758f, actualInvestmentValue, ROUND_TO_NEAREST_PENNY);
     }
 
+    /**
+     * The formula for simple interest is A = P(1 + rt), where P is the principal amount, r is the annual
+     * rate of interest, t is the number of years the amount is invested, and A is the amount at the end of
+     * the investment.
+     *
+     * @param principal
+     * @param percentInterestRate
+     * @param numberOfYears
+     * @return
+     */
     private float calcSimpleInterest(float principal, float percentInterestRate, float numberOfYears) {
         return 0;
     }
