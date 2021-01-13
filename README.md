@@ -28,13 +28,20 @@
       * make sure you push your changes back to your fork on GitHub, so they are visible to the coach during office hours
   * Week Two
     * Go to the PluralSight course [Getting Started with Programming in Java](https://app.pluralsight.com/library/courses/getting-started-programming-java/table-of-contents)
-      * Go through lessions 5 - 10 (2.5 hrs)
+      * Go through lessons 5 (30 min)
         * Looping and Arrays
-        * Understanding Methods
-        * Working with Strings
-        * String Formatting
-        * More About Data Types
-      * Go through the FizzBuzzTest.java file in src/test/java and implement each test in the /src/main/java/FizzBuzz.java class
+     * Go through the WeekTwoExercisePartOne.java file in src/test/java and implement each test in the /src/main/java/BowlingGame.java class
         * Make a Git commit after implementing each test with the minimum amount of code required to make the test pass
-          * this may inncluding just putting in a literal value...do not add any additional code
-          * Hint:  If you complete implementing a test and the next test passes w/o any changes to FizzBuzz.java, you did too much and should start over from the previous test.
+          * this may including just putting in a literal value...do not add any additional code
+          * Hint:  If you complete implementing a test and the next test passes w/o any changes to BowlingGame.java, you did too much and should start over from the previous test.
+     * Go through lessons 6 - 7 (1 hrs)
+       * Understanding Methods
+       * Working with Strings   
+     * Go through the WeekTwoExercisePartTwo.java file in src/test/java and implement each test in the /src/main/java/FizzBuzz.java class
+       * Make a Git commit after implementing each test with the minimum amount of code required to make the test pass
+         * this may including just putting in a literal value...do not add any additional code
+         * Hint:  If you complete implementing a test and the next test passes w/o any changes to FizzBuzz.java, you did too much and should start over from the previous test.
+     * Go back to the PluralSight course [Getting Started with Programming in Java](https://app.pluralsight.com/library/courses/getting-started-programming-java/table-of-contents)
+     * Go through lessions 8 - 9 (1 hrs)
+       * String Formatting
+       * More About Data Types
