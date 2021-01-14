@@ -6,7 +6,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class WeekOneExercisesPartOne {
     // ** EXERCISE INSTRUCTIONS **
     // Make the smallest change(s) possible to get each test to pass in sequence.
-    // Commit to git after each test passes with a message describing what you did.
+
+    // TODO Commit:  Commit to git after each test passes with a message describing what you did.
+    // TODO Refactor: Refactor your code (remove duplication, etc.) and commit again
 
     final double ROUND_TO_NEAREST_PENNY = .001;
 

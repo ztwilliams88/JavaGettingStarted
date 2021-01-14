@@ -13,7 +13,7 @@ public class BowlingGame {
         // TODO CODE: Change this to use a loop prior to implementing spare and strike calculation and then commit to git
         //            This change should not break the existing tests that pass. This is called refactoring.
 
-        // TODO RESPONSE: Why does this need to start with zero?
+        // TODO RESPONSE: Why does the subscript need to start with zero?
         score += rolls[0] + rolls[1];
         score += rolls[2] + rolls[3];
         score += rolls[4] + rolls[5];

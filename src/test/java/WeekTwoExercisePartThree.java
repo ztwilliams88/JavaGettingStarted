@@ -26,7 +26,13 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
  */
 
 public class WeekTwoExercisePartThree {
+    // TODO: remove @Disabled attribute, make the test run green, and then move on to the next test
+    // TODO: remember to refactor after you have a green test (never refactor when you have a failing test)
+
+    // TODO Response: Why would you never refactor if you had a failing test?
+
     @Test
+    @Disabled
     public void sendingAnActualFridayTheThirteenthReturnsTrue() {
         // TODO: Implement the code to make this test pass
         // TODO: don't forget to commit after passing the test
@@ -92,7 +98,7 @@ public class WeekTwoExercisePartThree {
         //  TODO: don't forget to commit after passing the test
     }
 
-    // TODO Empty this method: after PR Review by Steve
+    // TODO Implementation Implement your changes to make the tests pass here...
 
     public LocalDate[] unluckyDatesByYear(int year) {
         LocalDate[] localDates = new LocalDate[12];
@@ -100,14 +106,11 @@ public class WeekTwoExercisePartThree {
         return localDates;
     }
 
-    // TODO Remove this method: after PR review by Steve
-
     private LocalDate[] addElement(LocalDate[] localDates, int year, int month) {
 
         return localDates;
     }
 
-    // TODO Empty this method: after PR reveiw by Steve
     public boolean isUnluckyDate(int year, int month, int day) {
         return false;
     }
