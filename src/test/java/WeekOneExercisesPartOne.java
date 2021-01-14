@@ -1,3 +1,4 @@
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -20,6 +21,7 @@ public class WeekOneExercisesPartOne {
     }
 
     @Test
+    @Disabled
     public void numberOfWholeSlicesFromOnePizzaAndEightPeople() {
         int numberOfPeople = 4;
         int numberOfEightSlicePizzas = 2;
@@ -30,16 +32,7 @@ public class WeekOneExercisesPartOne {
     }
 
     @Test
-    public void numberOfWholePiecesPerPerson() {
-        int numberOfPeople = 3;
-        int numberOfEightSlicePizzas = 2;
-
-        int actualSlicesPerPerson = divideUpEightSlicePizzasEvenly(numberOfEightSlicePizzas, numberOfPeople);
-
-        assertEquals(1, actualSlicesPerPerson);
-    }
-
-    @Test
+    @Disabled
     public void leftoversWithFivePeopleAndTwoPizzas() {
         int numberOfPeople = 5;
         int numberOfEightSlicePizzas = 2;
@@ -58,6 +51,7 @@ public class WeekOneExercisesPartOne {
     }
 
     @Test
+    @Disabled
     public void simpleInterestReturnsCorrectAmount() {
         float principalAmount = 1500;
         float interestRateAsAPercent = 4.3f;
