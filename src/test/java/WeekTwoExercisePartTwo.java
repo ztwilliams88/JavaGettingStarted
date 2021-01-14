@@ -1,3 +1,4 @@
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -12,9 +13,17 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 */
 
 public class WeekTwoExercisePartTwo {
+    // TODO: remove @Disabled attribute, make the test run green, and then move on to the next test
+    // TODO: remember to refactor after you have a green test (never refactor when you have a failing test)
+
+    // TODO Response: Why would you never refactor if you had a failing test?
+
     @Test
-    // TODO Comment: replace this comment with a brief description of why you made the change you did in FizzBuzz.java
+    @Disabled
     public void sendingOneShouldReturnStringOne(){
+        // TODO Comment: replace this comment with a brief description of why you made the change you did in FizzBuzz.java
+        // TODO: Implement the code to make this test pass
+        // TODO: don't forget to commit after passing the test
         FizzBuzz fb = new FizzBuzz();
         String expected = "1";
 
@@ -24,8 +33,12 @@ public class WeekTwoExercisePartTwo {
     }
 
     @Test
-    // TODO Comment: replace this comment with a brief description of why you made the change you did in FizzBuzz.java
+    @Disabled
     public void sendingTwoShouldReturnStringTwo(){
+        // TODO Comment: replace this comment with a brief description of why you made the change you did in FizzBuzz.java
+        // TODO: Implement the code to make this test pass
+        // TODO: don't forget to commit after passing the test
+
         FizzBuzz fb = new FizzBuzz();
         String expected = "2";
 
@@ -35,8 +48,12 @@ public class WeekTwoExercisePartTwo {
     }
 
     @Test
-    // TODO Comment: replace this comment with a brief description of why you made the change you did in FizzBuzz.java
+    @Disabled
     public void sendingThreeShouldReturnStringFizz() {
+        // TODO Comment: replace this comment with a brief description of why you made the change you did in FizzBuzz.java
+        // TODO: Implement the code to make this test pass
+        // TODO: don't forget to commit after passing the test
+
         FizzBuzz fb = new FizzBuzz();
         String expected = "Fizz";
 
@@ -46,8 +63,12 @@ public class WeekTwoExercisePartTwo {
     }
 
     @Test
-    // TODO Comment: replace this comment with a brief description of why you made the change you did in FizzBuzz.java
+    @Disabled
     public void sendingAnyMultipleOfThreeShouldReturnStringFizz() {
+        // TODO Comment: replace this comment with a brief description of why you made the change you did in FizzBuzz.java
+        // TODO: Implement the code to make this test pass
+        // TODO: don't forget to commit after passing the test
+
         FizzBuzz fb = new FizzBuzz();
         String expected = "Fizz";
 
@@ -57,8 +78,12 @@ public class WeekTwoExercisePartTwo {
     }
 
     @Test
-    // TODO Comment: replace this comment with a brief description of why you made the change you did in FizzBuzz.java
+    @Disabled
     public void sendingAnyMultipleOfFiveOfThreeShouldReturnStringBuzz() {
+        // TODO Comment: replace this comment with a brief description of why you made the change you did in FizzBuzz.java
+        // TODO: Implement the code to make this test pass
+        // TODO: don't forget to commit after passing the test
+
         FizzBuzz fb = new FizzBuzz();
         String expected = "Buzz";
 
@@ -68,8 +93,12 @@ public class WeekTwoExercisePartTwo {
     }
 
     @Test
-    // TODO Comment: replace this comment with a brief description of why you made the change you did in FizzBuzz.java
+    @Disabled
     public void sendingAnyMultipleOfThreeAndFiveOfThreeShouldReturnStringFizzBuzz() {
+        // TODO Comment: replace this comment with a brief description of why you made the change you did in FizzBuzz.java
+        // TODO: Implement the code to make this test pass
+        // TODO: don't forget to commit after passing the test
+
         FizzBuzz fb = new FizzBuzz();
         String expected = "FizzBuzz";
 
