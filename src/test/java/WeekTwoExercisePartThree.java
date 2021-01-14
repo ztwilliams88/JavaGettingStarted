@@ -106,11 +106,6 @@ public class WeekTwoExercisePartThree {
         return localDates;
     }
 
-    private LocalDate[] addElement(LocalDate[] localDates, int year, int month) {
-
-        return localDates;
-    }
-
     public boolean isUnluckyDate(int year, int month, int day) {
         return false;
     }
