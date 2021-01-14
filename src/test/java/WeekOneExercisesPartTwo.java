@@ -1,3 +1,4 @@
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -16,19 +17,17 @@ public class WeekOneExercisesPartTwo {
     }
 
     @Test
+    @Disabled
     public void bloodAlcoholLevelForAFemale() {
-        char gender = 'M';
-        int weightInPounds = 185;
-        int ouncesOfAlcoholConsumed = 3;
-        float hoursSinceLastDrink = 2;
+        char gender = 'F';
+        int weightInPounds = 135;
+        int ouncesOfAlcoholConsumed = 5;
+        float hoursSinceLastDrink = 1;
 
         float actualBAC = calculateBAC(gender, weightInPounds, ouncesOfAlcoholConsumed, hoursSinceLastDrink);
 
-        assertEquals(0.025, actualBAC, .001);
+        assertEquals(0.11, actualBAC, .001);
     }
-
-    /*
-    */
 
     /**
      * Given your weight, gender, number of drinks, the amount of alcohol
@@ -50,6 +49,8 @@ public class WeekOneExercisesPartTwo {
      * @return
      */
     private float calculateBAC(char gender, int weightInPounds, int ouncesOfAlcoholConsumed, float hoursSinceLastDrink) {
+        // TODO RESPONSE: In the PluralSight video, you learned of three ways to make decisions based on the value
+        //   in the gender variable. Implement this method using one way, and describe how the other ways could work.
         return 0.0f;
     }
 }
