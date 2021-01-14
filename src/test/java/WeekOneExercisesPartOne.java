@@ -11,6 +11,7 @@ public class WeekOneExercisesPartOne {
     final double ROUND_TO_NEAREST_PENNY = .001;
 
     @Test
+    // TODO Code: What is the least amount of code we need to make this test pass?
     public void numberOfWholeSlicesForOnePizzaAndEightPeople() {
         int numberOfPeople = 8;
         int numberOfEightSlicePizzas = 1;
@@ -33,6 +34,7 @@ public class WeekOneExercisesPartOne {
 
     @Test
     @Disabled
+    // TODO RESPONSE: What operator is used to determine remainders?
     public void leftoversWithFivePeopleAndTwoPizzas() {
         int numberOfPeople = 5;
         int numberOfEightSlicePizzas = 2;
@@ -52,6 +54,8 @@ public class WeekOneExercisesPartOne {
 
     @Test
     @Disabled
+    // TODO RESPONSE: In the variable declarations below, why is it necessary to place
+    //  an 'f' after 4.3 but not after 1500 or 4?
     public void simpleInterestReturnsCorrectAmount() {
         float principalAmount = 1500;
         float interestRateAsAPercent = 4.3f;

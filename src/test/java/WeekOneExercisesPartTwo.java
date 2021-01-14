@@ -49,6 +49,8 @@ public class WeekOneExercisesPartTwo {
      * @return
      */
     private float calculateBAC(char gender, int weightInPounds, int ouncesOfAlcoholConsumed, float hoursSinceLastDrink) {
+        // TODO RESPONSE: In the PluralSight video, you learned of three ways to make decisions based on the value
+        //   in the gender variable. Implement this method using one way, and describe how the other ways could work.
         return 0.0f;
     }
 }
