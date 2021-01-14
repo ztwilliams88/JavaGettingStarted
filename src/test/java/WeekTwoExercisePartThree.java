@@ -1,74 +1,101 @@
-import java.time.DayOfWeek;
+
 import java.time.LocalDate;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 /**
+ * Friday the thirteenth is fabled to be an 'unlucky' day.  Implement the code below to
+ * discover which thirteenth dates from any given year fall on a Friday.
+ *
+ * Each test below has a @Disabled attribute that must be removed in order for that test
+ * to run.
+ *
+ * Implement each step in the simplest manner possible where all tests continue to pass.
+ *
  * Make a Git commit after implementing each test. Add only the minimum amount of code required
  * for each test case to make that test pass. This may innclude just putting in a literal value...
  * do not add any additional code.
- * <p>
+ *
  * Hint:  If you complete implementing a test and the next test passes w/o any changes to the
- * called function, you did too much and should start over from the previous test.
+ * called function, you did too much and should start over from the previous test unless it's one
+ * if the last two or three.  The final couple of tests are just for verification.
  */
 
 public class WeekTwoExercisePartThree {
     @Test
-    public void sending20190913ReturnsTrue() {
+    public void sendingAnActualFridayTheThirteenthReturnsTrue() {
+        // TODO: Implement the code to make this test pass
+        // TODO: don't forget to commit after passing the test
         boolean actual = isUnluckyDate(2019, 9, 13);
 
         assertTrue(actual);
-        // assertEquals(Arrays.asList(LocalDate.of(2020,03,13), LocalDate.of(2020,11,13)), actual);
     }
 
     @Test
-    public void sending20191213ReturnsTrue() {
-        boolean actual = isUnluckyDate(2019, 12, 13);
-
-        assertTrue(actual);
-    }
-
-    @Test
-    public void sending20191113ReturnsFalse() {
+    @Disabled
+    public void sendingNotAFridayTheThirteenthDateReturnsFalse() {
+        // TODO: Implement the code to make this test pass
+        // TODO: don't forget to commit after passing the test
         boolean actual = isUnluckyDate(2019, 11, 13);
 
         assertFalse(actual);
     }
 
     @Test
-    public void sending20201113ReturnsTrue() {
+    @Disabled
+    public void sendingFridayTheThirteenthFromAnotherYearReturnsFalse() {
+        // TODO: Implement the code to make this test pass
+        // TODO: don't forget to commit after passing the test
         boolean actual = isUnluckyDate(2020, 11, 13);
 
         assertTrue(actual);
     }
 
     @Test
-    public void sending2019ReturnsDatesFromSeptAndDec() {
+    @Disabled
+    public void sendingTwentySixteenReturnsOnlyOneFridayTheThirteenth() {
+        // TODO: Implement the code to make this test pass
+        // TODO: don't forget to commit after passing the test
         LocalDate[] actual = unluckyDatesByYear(2019);
-        LocalDate[] expected = new LocalDate[]{LocalDate.of(2019, 9, 13), LocalDate.of(2019, 12, 13)};
+        LocalDate[] expected = new LocalDate[]{
+                LocalDate.of(2019, 9, 13),
+                LocalDate.of(2019, 12, 13),
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null};
 
         assertArrayEquals(expected, actual);
     }
 
     @Test
-    public void sending2020ReturnsDatesFromMarchAndNovember() {
-        LocalDate[] actual = unluckyDatesByYear(2020);
-        LocalDate[] expected = new LocalDate[]{LocalDate.of(2020, 3, 13), LocalDate.of(2020, 11, 13)};
+    @Disabled
+    public void sendingTwentyNinteenReturnsTwoFridayTheThirteenths() {
+        //  TODO: write this test and, if necessary, make any changes to make it pass
+        //  TODO: don't forget to commit after passing the test
+    }
 
-        assertArrayEquals(expected, actual);
+    @Test
+    @Disabled
+    public void sendingTwentyFifteenReturnsThreeFridayTheThirteenths() {
+        //  TODO: write this test and, if necessary, make any changes to make it pass
+        //  TODO: don't forget to commit after passing the test
     }
 
     // TODO Empty this method: after PR Review by Steve
 
     public LocalDate[] unluckyDatesByYear(int year) {
-        LocalDate[] localDates = new LocalDate[0];
-
-        for (int month = 1; month <= 12; month++)
-            if (isUnluckyDate(year, month, 13))
-                localDates = addElement(localDates, year, month);
+        LocalDate[] localDates = new LocalDate[12];
 
         return localDates;
     }
@@ -76,24 +103,12 @@ public class WeekTwoExercisePartThree {
     // TODO Remove this method: after PR review by Steve
 
     private LocalDate[] addElement(LocalDate[] localDates, int year, int month) {
-        LocalDate[] temp = new LocalDate[localDates.length + 1];
-
-        if (localDates.length > 0)
-            temp[0] = localDates[0];
-
-        temp[Math.min(localDates.length, temp.length - 1)] = LocalDate.of(year, month, 13);
-        localDates = temp;
 
         return localDates;
     }
 
     // TODO Empty this method: after PR reveiw by Steve
     public boolean isUnluckyDate(int year, int month, int day) {
-        DayOfWeek dayofWeek = LocalDate.of(year, month, day).getDayOfWeek();
-
-        if (dayofWeek == DayOfWeek.FRIDAY)
-            return true;
-
         return false;
     }
 }
