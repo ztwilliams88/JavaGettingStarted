@@ -17,8 +17,11 @@ public class WeekOneExercisesPartOne {
     public void numberOfWholeSlicesForOnePizzaAndEightPeople() {
         int numberOfPeople = 8;
         int numberOfEightSlicePizzas = 1;
+        int slicesAvailable = 8 * numberOfEightSlicePizzas;
 
-        int actualSlicesPerPerson = divideUpEightSlicePizzasEvenly(numberOfEightSlicePizzas, numberOfPeople);
+        // int actualSlicesPerPerson = divideUpEightSlicePizzasEvenly(numberOfEightSlicePizzas, numberOfPeople);
+        // My Solution
+        int actualSlicesPerPerson = (8 * numberOfEightSlicePizzas) / numberOfPeople;
 
         assertEquals(1, actualSlicesPerPerson);
     }
