@@ -39,7 +39,6 @@ public class WeekOneExercisesPartOne {
     }
 
     @Test
-    @Disabled
     // TODO RESPONSE: What operator is used to determine remainders?
     public void leftoversWithFivePeopleAndTwoPizzas() {
         int numberOfPeople = 5;
@@ -61,15 +60,19 @@ public class WeekOneExercisesPartOne {
     }
 
     @Test
-    @Disabled
     // TODO RESPONSE: In the variable declarations below, why is it necessary to place
     //  an 'f' after 4.3 but not after 1500 or 4?
     public void simpleInterestReturnsCorrectAmount() {
         float principalAmount = 1500;
-        float interestRateAsAPercent = 4.3f;
+        float interestRateAsAPercent = .043f;
         float termOfInvestmentInYears = 4;
 
-        float actualInvestmentValue = calcSimpleInterest(principalAmount, interestRateAsAPercent, termOfInvestmentInYears);
+        //float actualInvestmentValue = calcSimpleInterest(principalAmount, interestRateAsAPercent, termOfInvestmentInYears);
+
+        //The f after 4.3 indicates that the variable is a floating point literal.  1500 and 4 are integers and will be read by the
+        //JVM as such, but 4.3 indicates a double.  So if it's intended to be a float and not a double, the f is needed.
+
+        float actualInvestmentValue = principalAmount * (1 + (interestRateAsAPercent * termOfInvestmentInYears));
 
         assertEquals(1758f, actualInvestmentValue, ROUND_TO_NEAREST_PENNY);
     }
