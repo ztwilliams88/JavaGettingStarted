@@ -45,7 +45,9 @@ public class WeekOneExercisesPartOne {
         int numberOfPeople = 5;
         int numberOfEightSlicePizzas = 2;
 
-        int actualLeftoverSlices = determineLeftoverSlicesOfPizza(numberOfEightSlicePizzas, numberOfPeople);
+        //int actualLeftoverSlices = determineLeftoverSlicesOfPizza(numberOfEightSlicePizzas, numberOfPeople);
+        //Modulus is used to find the remaining slices of pizza.
+        int actualLeftoverSlices = (8 * numberOfEightSlicePizzas) % 5;
 
         assertEquals(1, actualLeftoverSlices);
     }
