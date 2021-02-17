@@ -8,9 +8,10 @@ public class WeekOneExercisesPartTwo {
     // TODO: remember to refactor after you have a green test (never refactor when you have a failing test)
 
     // TODO Response: Why would you never refactor if you had a failing test?
+    // You wouldn't want to refactor your code after a failing test because then the future versions of code will
+    // include the incorrect changes that were made.
 
     @Test
-    @Disabled
     public void bloodAlcoholLevelForAMale() {
         char gender = 'M';
         int weightInPounds = 185;
@@ -23,7 +24,6 @@ public class WeekOneExercisesPartTwo {
     }
 
     @Test
-    @Disabled
     public void bloodAlcoholLevelForAFemale() {
         char gender = 'F';
         int weightInPounds = 135;
@@ -58,6 +58,18 @@ public class WeekOneExercisesPartTwo {
     private float calculateBAC(char gender, int weightInPounds, int ouncesOfAlcoholConsumed, float hoursSinceLastDrink) {
         // TODO RESPONSE: In the PluralSight video, you learned of three ways to make decisions based on the value
         //   in the gender variable. Implement this method using one way, and describe how the other ways could work.
-        return 0.0f;
+        // I used a switch statement based off the gender variable for this problem.  The other two ways this could have
+        // been solved was with an "if, else" statement or an "if, else if" statement.
+        float BAC = 0.0f;
+
+        switch(gender) {
+            case 'M':
+                BAC = (.73f * ouncesOfAlcoholConsumed * (5.14f / weightInPounds)) - (hoursSinceLastDrink * .015f);
+                break;
+            case 'F':
+                BAC = (.66f * ouncesOfAlcoholConsumed * (5.14f / weightInPounds)) - (hoursSinceLastDrink * .015f);
+                break;
+        }
+        return BAC;
     }
 }
