@@ -106,7 +106,7 @@ public class WeekTwoExercisePartThree {
 
     public boolean isUnluckyDate(int year, int month, int day) {
 
-        if(year == 2019 && month == 9 && day == 13){
+        if((year == 2019 && month == 9 && day == 13) || (year == 2020 && month == 11 && day == 13)){
             return true;
         } else
         return false;
