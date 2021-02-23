@@ -4,7 +4,9 @@ public class FizzBuzz {
         String output = null;
 
         if(number % 5 == 0){
-            output = "Buzz";
+            output = "FizzBuzz";
+        } else if(number % 3 == 0) {
+            output = "FizzBuzz";
         }
 
 
