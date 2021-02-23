@@ -63,9 +63,8 @@ public class WeekTwoExercisePartTwo {
     }
 
     @Test
-    @Disabled
     public void sendingAnyMultipleOfThreeShouldReturnStringFizz() {
-        // TODO Comment: replace this comment with a brief description of why you made the change you did in FizzBuzz.java
+        // I'm checking for modulus of 3 equals zero, if so I return Fizz.
         // TODO: Implement the code to make this test pass
         // TODO: don't forget to commit after passing the test
 
