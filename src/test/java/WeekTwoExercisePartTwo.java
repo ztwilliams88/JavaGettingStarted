@@ -19,9 +19,9 @@ public class WeekTwoExercisePartTwo {
     // TODO Response: Why would you never refactor if you had a failing test?
 
     @Test
-    @Disabled
     public void sendingOneShouldReturnStringOne(){
-        // TODO Comment: replace this comment with a brief description of why you made the change you did in FizzBuzz.java
+        // TODO Comment: My plan is to use a switch statement to satisfy the requirements, returning a String through the
+        // variable "output"
         // TODO: Implement the code to make this test pass
         // TODO: don't forget to commit after passing the test
         FizzBuzz fb = new FizzBuzz();
