@@ -7,6 +7,9 @@ public class FizzBuzz {
             case 1:
             output = "1";
             break;
+            case 2:
+            output = "2";
+            break;
         }
 
 
