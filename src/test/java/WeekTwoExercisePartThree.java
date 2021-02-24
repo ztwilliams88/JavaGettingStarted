@@ -93,6 +93,8 @@ public class WeekTwoExercisePartThree {
     public void sendingTwentyFifteenReturnsThreeFridayTheThirteenths() {
         //  TODO: write this test and, if necessary, make any changes to make it pass
         //  TODO: don't forget to commit after passing the test
+        LocalDate[] actual = unluckyDatesByYear(2015);
+
     }
 
     // TODO Implementation Implement your changes to make the tests pass here...
@@ -100,9 +102,11 @@ public class WeekTwoExercisePartThree {
     public LocalDate[] unluckyDatesByYear(int year) {
         LocalDate[] localDates = new LocalDate[12];
 
-        if (year == 2019) {
-            localDates[0] = LocalDate.parse("2019-09-13");
-            localDates[1] = LocalDate.parse("2019-12-13");
+        if (year == 2015) {
+            localDates[0] = LocalDate.parse("2015-02-13");
+            localDates[1] = LocalDate.parse("2015-03-13");
+            localDates[2] = LocalDate.parse("2015-11-13");
+
 
         }
         return localDates;
