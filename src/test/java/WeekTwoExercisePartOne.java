@@ -7,7 +7,7 @@ public class WeekTwoExercisePartOne {
 
     /**
      * We can briefly summarize the scoring rules for bowling:
-     *  Each game, or “line” of bowling, includes ten turns, or “frames” for the bowler.
+     * Each game, or line of bowling, includes ten turns, or frames for the bowler.
      *
      *  In each frame, the bowler gets up to two tries to knock down all the pins.
      *
@@ -34,8 +34,8 @@ public class WeekTwoExercisePartOne {
     // TODO Response: Why would you never refactor if you had a failing test?
 
     @Test
-    @Disabled
     // TODO Response: Why did we start with this test?
+    // We start with this test to initialize our variables.
     public void whenRollingAllGutterBallsScoreIsZero() {
         rollMany(20, 0);
 
@@ -45,8 +45,9 @@ public class WeekTwoExercisePartOne {
     }
 
     @Test
-    @Disabled
     // TODO Response:  If the above test works with open frames, why is this test necessary?
+    // The array must have a size of 21 to account for the ten frames, each of which requires two rolls.  And the leftover 1 to make 21
+    // is for the possibility of a third roll if there is a strike.
     public void whenRollingOpenFrameScoreIsSumOfRolls() {
         rollMany(20, 1);
 
