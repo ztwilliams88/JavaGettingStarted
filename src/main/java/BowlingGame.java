@@ -17,17 +17,19 @@ public class BowlingGame {
         //            This change should not break the existing tests that pass. This is called refactoring.
 
         // TODO RESPONSE: Why does the subscript need to start with zero?
-        score += rolls[0] + rolls[1];
-        score += rolls[2] + rolls[3];
-        score += rolls[4] + rolls[5];
-        score += rolls[6] + rolls[7];
-        score += rolls[8] + rolls[9];
-        score += rolls[10] + rolls[11];
-        score += rolls[12] + rolls[13];
-        score += rolls[14] + rolls[15];
-        score += rolls[16] + rolls[17];
-        score += rolls[18] + rolls[19];
+        int startOfNextFrameIndex = 0;
+        for (int frame = 1; frame < 11; frame++) {
+            if (rolls[startOfNextFrameIndex] == 10) {
+                score += 10 + rolls[startOfNextFrameIndex + 1] + rolls[startOfNextFrameIndex + 2];
+                startOfNextFrameIndex += 1;
+            } else if (rolls[startOfNextFrameIndex] + rolls[startOfNextFrameIndex + 1] == 10) {
+                score += 10 + rolls[startOfNextFrameIndex + 2];
+                startOfNextFrameIndex += 2;
+            } else {
+                score += rolls[startOfNextFrameIndex] + rolls[startOfNextFrameIndex + 1];
+                startOfNextFrameIndex += 2;
+            }
+        }
         return score;
     }
-
 }
