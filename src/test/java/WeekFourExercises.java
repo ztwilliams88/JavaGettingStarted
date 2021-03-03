@@ -1,6 +1,4 @@
-import java.util.Arrays;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 public class WeekFourExercises {
     public List<String> returnStringsInAlphabeticalOrder(){
@@ -10,8 +8,16 @@ public class WeekFourExercises {
         String four = "four";
         String five = "five";
 
-        String [] myStrings = new String [] {one, two, three, four, five};
-        return Arrays.asList("");
+        ArrayList<String> myStrings = new ArrayList <String>();
+        myStrings.add(one);
+        myStrings.add(two);
+        myStrings.add(three);
+        myStrings.add(four);
+        myStrings.add(five);
+
+        Collections.sort(myStrings);
+        return myStrings;
+
     }
 
     public List<String> returnStringsAsMapInGuaranteedNumericalKeyOrder(){
