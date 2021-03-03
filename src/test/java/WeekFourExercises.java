@@ -20,14 +20,21 @@ public class WeekFourExercises {
 
     }
 
-    public List<String> returnStringsAsMapInGuaranteedNumericalKeyOrder(){
+    public HashMap<Integer, String> returnStringsAsMapInGuaranteedNumericalKeyOrder(){
         String one = "one";
         String two = "two";
         String three = "three";
         String four = "four";
         String five = "five";
 
-        return Arrays.asList("");
+        HashMap<Integer, String> order = new HashMap<Integer, String>();
+        order.put(1, one);
+        order.put(2, two);
+        order.put(3, three);
+        order.put(4, four);
+        order.put(5, five);
+
+        return order;
     }
 
     // Create a set of accessors for each of the fields in the following class.
