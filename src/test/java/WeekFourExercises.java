@@ -53,6 +53,7 @@ public class WeekFourExercises {
 
         }
 
+
         public Person(String firstName, String middleName, String lastName, Date dateOfBirth, String phoneNumber){
 
             this.firstName = firstName;
@@ -61,10 +62,56 @@ public class WeekFourExercises {
             this.dateOfBirth = dateOfBirth;
             this.phoneNumber = phoneNumber;
         }
+
+        public String getFirstName() {
+            return firstName;
+        }
+
+        public String getMiddleName() {
+            return middleName;
+        }
+
+        public String getLastName() {
+            return lastName;
+        }
+
+        public Date getDateOfBirth() {
+            return dateOfBirth;
+        }
+
+        public String getPhoneNumber() {
+            return phoneNumber;
+        }
+
+        public void setFirstName(String firstName) {
+            this.firstName = firstName;
+        }
+
+        public void setMiddleName(String middleName) {
+            this.middleName = middleName;
+        }
+
+        public void setLastName(String lastName) {
+            this.lastName = lastName;
+        }
+
+        public void setDateOfBirth(Date dateOfBirth) {
+            this.dateOfBirth = dateOfBirth;
+        }
+
+        public void setPhoneNumber(String phoneNumber) {
+            this.phoneNumber = phoneNumber;
+        }
+
+        public String fullName(String firstName, String middleName, String lastName){
+            String fullName = lastName + ", " + firstName + " " + middleName;
+            return fullName;
+        }
     }
 
-    public void demonstrateCloneOfPersonClassImplementation(){
-
+    public Person demonstrateCloneOfPersonClassImplementation(String firstName, String middleName, String lastName, Date dateOfBirth, String phoneNumber){
+        Person clonedPerson = new Person(firstName, middleName, lastName, dateOfBirth, phoneNumber);
+        return clonedPerson;
     }
 
 
